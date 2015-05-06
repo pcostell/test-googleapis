@@ -1,3 +1,4 @@
+language: python
 before_deploy:
 - python/build_protoc.sh
 - python/exec_protoc.sh
