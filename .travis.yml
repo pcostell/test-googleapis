@@ -1,0 +1,10 @@
+before_deploy:
+- python/build_protoc.sh
+- python/exec_protoc.sh
+- cd python
+deploy:
+  provider: pypi
+  server: https://testpypi.python.org/pypi
+  user: test-clouddatastore
+  password:
+    secure: RGZoIT7b/TD7LM6AOscYzAaDIFxd7QRj7XNH4okN5wUH2UzyKzj8CB4cbKjpS3uP2oU/9gLAaKaMQmfeLLf0SoECPl/9nC2WCwVKfzrMDk5ul+DFuQ5ABEPs7Kvnza3uRZq4dAoWaD/RzYCkQQWM1ew7YDfuzbF5hni5+gej81g=
