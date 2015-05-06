@@ -1,9 +1,3 @@
-addons:
-  apt:
-    packages:
-    - autoconf
-    - automake
-    - libtool
 before_deploy:
 - python/build_protoc.sh
 - python/exec_protoc.sh
