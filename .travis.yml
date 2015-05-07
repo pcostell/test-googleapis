@@ -1,7 +1,11 @@
 script:
   - echo "No tests to run."
-before_deploy:
+cache:
+  directories:
+  - $HOME/.protobuf
+before_install:
   - sh python/build_protoc.sh
+before_deploy:
   - sh python/exec_protoc.sh
   - cd ./python
 deploy:
