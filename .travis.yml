@@ -1,9 +1,8 @@
-language: python
 script:
   - echo "No tests to run."
 before_deploy:
-  - ./python/build_protoc.sh
-  - ./python/exec_protoc.sh
+  - sh python/build_protoc.sh
+  - sh python/exec_protoc.sh
   - cd ./python
 deploy:
   provider: pypi
