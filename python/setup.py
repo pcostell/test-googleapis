@@ -26,6 +26,6 @@ setup(
     author_email='pcostello@google.com',
     url='https://github.com/google/googleapis',
     namespace_packages=['google'],
-    packages = find_packages()
+    packages = find_packages(),
     install_requires=['protobuf==3.0.0']
 )
