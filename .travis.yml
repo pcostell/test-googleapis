@@ -6,7 +6,7 @@ cache:
 before_install:
   - sh python/build_protoc.sh
 before_deploy:
-  - sh python/exec_protoc.sh
+  - sh python/setup_python.sh
   - cd ./python
 deploy:
   provider: pypi
